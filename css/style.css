@@ -1,0 +1,26 @@
+h1 {
+    font-size: 1.5em;
+    color: #ab12cd;
+}
+p {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #ab45cd;
+}
+h2{
+    font-size: 1.2em;
+    color: #ab45cd;
+}
+input:focus {
+    background-color: #abffcd;
+}
+fieldset {
+    color: dimgrey;
+}
+#button {
+    border-radius: 15px;
+    width: 70px;
+    height: 45px;
+    font-size: 1em;
+    font-weight: bold;
+}

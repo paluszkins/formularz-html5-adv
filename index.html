@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz autocomplete</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="https://formspree.io/m.magdalena.pal@gmail.com" method="POST" autocomplete="on">
+        <h1>A Simple Form</h1>
+        <p>Form Fundamentals</p>
+        <fieldset>
+            <legend>
+                <h2>Customer info</h2>
+            </legend>
+            <label>Name: <input type="text" placeholder="Enter your name" required autofocus></label><br><br>
+            <label>Telephone: <input type="text" placeholder="1-234-567-9810" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label><br><br>
+            <label>Email address: <input type="email" placeholder="Enter your email address" required multiple></label></fieldset><br><br>
+        <fieldset>
+            <legend>
+                <h2>Books</h2>
+            </legend>
+            <label><select name="books">
+                <option value="Ania z zielonego wzgórza">Ania z zielonego wzgórza</option>
+                <option value="Ogniem i Mieczem">Ogniem i Mieczem</option>
+                <option value="Krzyżacy">Krzyżacy</option>
+                <option value="Pan Tadeusz">Pan Tadeusz</option>
+                <option value="Noelka">Noelka</option>
+            </select></label>
+            <label> Quantity (maximum 5) <input type="number" min="1" max="5"></label>
+        </fieldset>
+        <br><br>
+        <input id="button" type="submit" value="Submit">
+    </form>
+</body>
+</html>
